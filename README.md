@@ -1,5 +1,8 @@
 # Airbnb-and-the-Real-Estate-Analysis
 
+# Poster
+<img width="592" alt="CS216 Poster" src="https://user-images.githubusercontent.com/46532194/64574848-09a94780-d33f-11e9-8126-3c4fff95e250.png">
+
 # Motivation:
 The rise of Airbnb since its founding in 2008 has fundamentally transformed the hospitality industry and the way in which people around the world are traveling. Its exponential growth in recent years relies heavily on its innovative digital solution to the traditional practices of home-renting. Curious about how the listing prices are determined, our team set out to develop a price prediction model that would not only shed light on which factors influence listing prices in different geographical locations, but also provide insight into the market potential of a “new” city if Airbnb were to expand into a city in which it had minimal host network. Furthermore, we brought in Zillow’s real estate data to see if there was any correlation between Airbnb listing prices and home values across different cities.
 
@@ -19,5 +22,5 @@ fter dealing with the modified review scores, we moved on to the amenities colum
 Lastly, we decided to use zip code as the key to merge our ZHVI data with our Airbnb dataset. This was the smallest and most precise metric that we could find housing data for using Zillow’s research data. We brought in this Zillow data so that our model could be used on listings that did not solely come from the four cities we trained on. Although categorizing listings based on neighborhood would be even more precise, the Zillow dataset contained a limited list of neighborhoods, rendering neighborhood a less useful metric than zip code to link the Airbnb and Zillow datasets. Since not every zip code in the Airbnb dataset was present in the Zillow dataset, we also had to come up with a method to merge our data. To do this, we made a function that would check if the listing’s zip code was in the Zillow dataset, and if so, would return the mean ZHVI for that zip code. If the zip code was not in the Zillow dataset, it would check if the listing’s city was in the Zillow dataset, and if so, would return the mean ZHVI for that city. If the city was not listed in the Zillow data, it would then check the state, and if the state was found, would return the mean ZHVI for that state. If even the state was not found, it would return the mean ZHVI for the entire Zillow dataset. Once we had the datasets merged, we noticed a very large range of ZHVI values, and so decided to use min-max scaling to scale the data down.
 
 # Result
-
+<img width="502" alt="216 Result" src="https://user-images.githubusercontent.com/46532194/64574852-0c0ba180-d33f-11e9-9679-252fad7e9337.png">
 
