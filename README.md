@@ -1,5 +1,8 @@
 # Airbnb-and-the-Real-Estate-Analysis
 
+# Prediction
+![CS216 Script](https://user-images.githubusercontent.com/46532194/64575150-5d686080-d340-11e9-9f42-283632bc9483.jpg)
+
 # Poster
 <img width="592" alt="CS216 Poster" src="https://user-images.githubusercontent.com/46532194/64574848-09a94780-d33f-11e9-8126-3c4fff95e250.png">
 
